@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC6858582A0A734B00F067B3 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6858572A0A734B00F067B3 /* NotificationHandler.swift */; };
+		CC8C3F2D2A0E732600B06D2F /* LocationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */; };
+		CC8C3F312A0E841D00B06D2F /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C3F302A0E841D00B06D2F /* LocationsView.swift */; };
+		CCC76E642A0363FD00C1257B /* UserLocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */; };
 		CCF59C522A03630600D5DE3C /* SignificantLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */; };
 		CCF59C542A03630600D5DE3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF59C532A03630600D5DE3C /* ContentView.swift */; };
 		CCF59C562A03630800D5DE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF59C552A03630800D5DE3C /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC6858572A0A734B00F067B3 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDAO.swift; sourceTree = "<group>"; };
+		CC8C3F302A0E841D00B06D2F /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationTracker.swift; sourceTree = "<group>"; };
 		CCF59C4E2A03630600D5DE3C /* SignificantLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignificantLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignificantLocationApp.swift; sourceTree = "<group>"; };
 		CCF59C532A03630600D5DE3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCC76E602A0363B800C1257B /* UserLocationTracker */ = {
+			isa = PBXGroup;
+			children = (
+				CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */,
+				CC6858572A0A734B00F067B3 /* NotificationHandler.swift */,
+				CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */,
+			);
+			path = UserLocationTracker;
+			sourceTree = "<group>";
+		};
 		CCF59C452A03630600D5DE3C = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +113,10 @@
 		CCF59C502A03630600D5DE3C /* SignificantLocation */ = {
 			isa = PBXGroup;
 			children = (
+				CCC76E602A0363B800C1257B /* UserLocationTracker */,
 				CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */,
 				CCF59C532A03630600D5DE3C /* ContentView.swift */,
+				CC8C3F302A0E841D00B06D2F /* LocationsView.swift */,
 				CCF59C552A03630800D5DE3C /* Assets.xcassets */,
 				CCF59C572A03630800D5DE3C /* SignificantLocation.entitlements */,
 				CCF59C582A03630800D5DE3C /* Preview Content */,
@@ -259,6 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC76E642A0363FD00C1257B /* UserLocationTracker.swift in Sources */,
+				CC8C3F2D2A0E732600B06D2F /* LocationDAO.swift in Sources */,
+				CC6858582A0A734B00F067B3 /* NotificationHandler.swift in Sources */,
+				CC8C3F312A0E841D00B06D2F /* LocationsView.swift in Sources */,
 				CCF59C542A03630600D5DE3C /* ContentView.swift in Sources */,
 				CCF59C522A03630600D5DE3C /* SignificantLocationApp.swift in Sources */,
 			);
@@ -419,6 +443,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Necessário para funcionalidades do app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Necessário para funcionalidades do app";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -429,12 +455,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fulltime.fullarm.SignificantLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = "agenda-telefonica-projeto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -457,6 +483,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Necessário para funcionalidades do app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Necessário para funcionalidades do app";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -467,12 +495,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fulltime.fullarm.SignificantLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = "agenda-telefonica-projeto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
