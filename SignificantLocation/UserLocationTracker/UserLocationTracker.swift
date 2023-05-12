@@ -98,5 +98,4 @@ class UserLocationTracker: NSObject, CLLocationManagerDelegate {
     public func getLocations() -> [Location] {
         return LocationDAO.instance.getLocations()
     }
-    
 }
