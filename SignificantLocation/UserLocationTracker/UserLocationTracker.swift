@@ -31,6 +31,7 @@ class UserLocationTracker: NSObject, CLLocationManagerDelegate {
         if (locationManager.authorizationStatus == .denied || locationManager.authorizationStatus == .notDetermined) { return }
         
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.showsBackgroundLocationIndicator = true
         locationManager.activityType = .other
         locationManager.startMonitoringSignificantLocationChanges()
         print("Coleta de localização irá iniciar")

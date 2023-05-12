@@ -11,6 +11,7 @@
 		CC8C3F2D2A0E732600B06D2F /* LocationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */; };
 		CC8C3F312A0E841D00B06D2F /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C3F302A0E841D00B06D2F /* LocationsView.swift */; };
 		CCC76E642A0363FD00C1257B /* UserLocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */; };
+		CCF1D4622A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4612A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift */; };
 		CCF59C522A03630600D5DE3C /* SignificantLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */; };
 		CCF59C542A03630600D5DE3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF59C532A03630600D5DE3C /* ContentView.swift */; };
 		CCF59C562A03630800D5DE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF59C552A03630800D5DE3C /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDAO.swift; sourceTree = "<group>"; };
 		CC8C3F302A0E841D00B06D2F /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationTracker.swift; sourceTree = "<group>"; };
+		CCF1D4612A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiximityGeographicRegionsMonitoring.swift; sourceTree = "<group>"; };
 		CCF59C4E2A03630600D5DE3C /* SignificantLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignificantLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignificantLocationApp.swift; sourceTree = "<group>"; };
 		CCF59C532A03630600D5DE3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */,
 				CC6858572A0A734B00F067B3 /* NotificationHandler.swift */,
 				CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */,
+				CCF1D4612A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift */,
 			);
 			path = UserLocationTracker;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				CCC76E642A0363FD00C1257B /* UserLocationTracker.swift in Sources */,
 				CC8C3F2D2A0E732600B06D2F /* LocationDAO.swift in Sources */,
 				CC6858582A0A734B00F067B3 /* NotificationHandler.swift in Sources */,
+				CCF1D4622A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift in Sources */,
 				CC8C3F312A0E841D00B06D2F /* LocationsView.swift in Sources */,
 				CCF59C542A03630600D5DE3C /* ContentView.swift in Sources */,
 				CCF59C522A03630600D5DE3C /* SignificantLocationApp.swift in Sources */,
