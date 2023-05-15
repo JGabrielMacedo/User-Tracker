@@ -11,7 +11,12 @@
 		CC8C3F2D2A0E732600B06D2F /* LocationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */; };
 		CC8C3F312A0E841D00B06D2F /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C3F302A0E841D00B06D2F /* LocationsView.swift */; };
 		CCC76E642A0363FD00C1257B /* UserLocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */; };
-		CCF1D4622A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4612A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift */; };
+		CCF1D4622A0EB27D00968281 /* UserRegionMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4612A0EB27D00968281 /* UserRegionMonitoring.swift */; };
+		CCF1D4662A0EC37400968281 /* UserRegionMonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4652A0EC37400968281 /* UserRegionMonitoringView.swift */; };
+		CCF1D4682A0ED9C800968281 /* UserLocationTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4672A0ED9C800968281 /* UserLocationTrackerView.swift */; };
+		CCF1D46A2A12709400968281 /* RegionLogDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4692A12709400968281 /* RegionLogDAO.swift */; };
+		CCF1D46D2A1272E800968281 /* UserDefaultFiels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D46C2A1272E800968281 /* UserDefaultFiels.swift */; };
+		CCF1D4712A1274DC00968281 /* RegionLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1D4702A1274DC00968281 /* RegionLogView.swift */; };
 		CCF59C522A03630600D5DE3C /* SignificantLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */; };
 		CCF59C542A03630600D5DE3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF59C532A03630600D5DE3C /* ContentView.swift */; };
 		CCF59C562A03630800D5DE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF59C552A03630800D5DE3C /* Assets.xcassets */; };
@@ -43,7 +48,12 @@
 		CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDAO.swift; sourceTree = "<group>"; };
 		CC8C3F302A0E841D00B06D2F /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationTracker.swift; sourceTree = "<group>"; };
-		CCF1D4612A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiximityGeographicRegionsMonitoring.swift; sourceTree = "<group>"; };
+		CCF1D4612A0EB27D00968281 /* UserRegionMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegionMonitoring.swift; sourceTree = "<group>"; };
+		CCF1D4652A0EC37400968281 /* UserRegionMonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegionMonitoringView.swift; sourceTree = "<group>"; };
+		CCF1D4672A0ED9C800968281 /* UserLocationTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationTrackerView.swift; sourceTree = "<group>"; };
+		CCF1D4692A12709400968281 /* RegionLogDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionLogDAO.swift; sourceTree = "<group>"; };
+		CCF1D46C2A1272E800968281 /* UserDefaultFiels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultFiels.swift; sourceTree = "<group>"; };
+		CCF1D4702A1274DC00968281 /* RegionLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionLogView.swift; sourceTree = "<group>"; };
 		CCF59C4E2A03630600D5DE3C /* SignificantLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignificantLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignificantLocationApp.swift; sourceTree = "<group>"; };
 		CCF59C532A03630600D5DE3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,12 +95,39 @@
 		CCC76E602A0363B800C1257B /* UserLocationTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CC8C3F302A0E841D00B06D2F /* LocationsView.swift */,
+				CCF1D4672A0ED9C800968281 /* UserLocationTrackerView.swift */,
 				CCC76E632A0363FD00C1257B /* UserLocationTracker.swift */,
-				CC6858572A0A734B00F067B3 /* NotificationHandler.swift */,
 				CC8C3F2C2A0E732600B06D2F /* LocationDAO.swift */,
-				CCF1D4612A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift */,
 			);
 			path = UserLocationTracker;
+			sourceTree = "<group>";
+		};
+		CCF1D4632A0EC2DD00968281 /* RegionMonitoring */ = {
+			isa = PBXGroup;
+			children = (
+				CCF1D4612A0EB27D00968281 /* UserRegionMonitoring.swift */,
+				CCF1D4652A0EC37400968281 /* UserRegionMonitoringView.swift */,
+				CCF1D4692A12709400968281 /* RegionLogDAO.swift */,
+				CCF1D4702A1274DC00968281 /* RegionLogView.swift */,
+			);
+			path = RegionMonitoring;
+			sourceTree = "<group>";
+		};
+		CCF1D4642A0EC33A00968281 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				CC6858572A0A734B00F067B3 /* NotificationHandler.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		CCF1D46B2A1272D900968281 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CCF1D46C2A1272E800968281 /* UserDefaultFiels.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		CCF59C452A03630600D5DE3C = {
@@ -116,10 +153,12 @@
 		CCF59C502A03630600D5DE3C /* SignificantLocation */ = {
 			isa = PBXGroup;
 			children = (
+				CCF1D46B2A1272D900968281 /* Constants */,
+				CCF1D4642A0EC33A00968281 /* Notification */,
+				CCF1D4632A0EC2DD00968281 /* RegionMonitoring */,
 				CCC76E602A0363B800C1257B /* UserLocationTracker */,
 				CCF59C512A03630600D5DE3C /* SignificantLocationApp.swift */,
 				CCF59C532A03630600D5DE3C /* ContentView.swift */,
-				CC8C3F302A0E841D00B06D2F /* LocationsView.swift */,
 				CCF59C552A03630800D5DE3C /* Assets.xcassets */,
 				CCF59C572A03630800D5DE3C /* SignificantLocation.entitlements */,
 				CCF59C582A03630800D5DE3C /* Preview Content */,
@@ -282,12 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF1D46A2A12709400968281 /* RegionLogDAO.swift in Sources */,
 				CCC76E642A0363FD00C1257B /* UserLocationTracker.swift in Sources */,
 				CC8C3F2D2A0E732600B06D2F /* LocationDAO.swift in Sources */,
+				CCF1D4712A1274DC00968281 /* RegionLogView.swift in Sources */,
 				CC6858582A0A734B00F067B3 /* NotificationHandler.swift in Sources */,
-				CCF1D4622A0EB27D00968281 /* PromiximityGeographicRegionsMonitoring.swift in Sources */,
+				CCF1D4682A0ED9C800968281 /* UserLocationTrackerView.swift in Sources */,
+				CCF1D4622A0EB27D00968281 /* UserRegionMonitoring.swift in Sources */,
 				CC8C3F312A0E841D00B06D2F /* LocationsView.swift in Sources */,
 				CCF59C542A03630600D5DE3C /* ContentView.swift in Sources */,
+				CCF1D4662A0EC37400968281 /* UserRegionMonitoringView.swift in Sources */,
+				CCF1D46D2A1272E800968281 /* UserDefaultFiels.swift in Sources */,
 				CCF59C522A03630600D5DE3C /* SignificantLocationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

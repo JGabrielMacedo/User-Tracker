@@ -16,10 +16,13 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                     .padding(.all, 7.0)
                 
-                NavigationLink(destination: LocationsView()) {
-                    Text("Visualizar localizações")
+                NavigationLink(destination: UserLocationTrackerView()) {
+                    Text("Rastreamento de usuário")
                 }.padding(.all, 7.0)
-                
+
+                NavigationLink(destination: UserRegionMonitoringView()) {
+                    Text("Monitoramento de região")
+                }.padding(.all, 7.0)
                 
                 Button("Solicita permissão de notificação") {
                     NotificationHandler.instance.requestNotificationAuthorization()
@@ -30,20 +33,6 @@ struct ContentView: View {
                         UIApplication.shared.open(url)
                     }
                 }.padding(.all, 7.0)
-                
-                Button("Inicia registro de localização") {
-                    UserLocationTracker.instance.initializeLocationTracker()
-                }
-                .padding(.all, 7.0)
-                
-                Button("Interromper registro de localização") {
-                    UserLocationTracker.instance.finishLocationTracker()
-                }.padding(.all, 7.0)
-                
-                Button("Limpar localizações coletadas") {
-                    UserLocationTracker.instance.cleanLocations()
-                }
-                .padding(.all, 7.0)
             }
             
         }

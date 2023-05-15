@@ -47,7 +47,7 @@ class UserLocationTracker: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let coordinates = locations.first?.coordinate
         
-        let location = Location(latitude: "\(String(describing: coordinates?.latitude))", longitude: "\(String(describing: coordinates?.latitude))")
+        let location = Location(latitude: "\(String(describing: coordinates?.latitude))", longitude: "\(String(describing: coordinates?.latitude))", moment: Date())
         
         LocationDAO.instance.addNewLocation(newLocation: location)
         LocationDAO.instance.storeLocations()

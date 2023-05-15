@@ -8,15 +8,15 @@
 import Foundation
 class Location: Codable, Identifiable {
     
-    init(latitude: String, longitude: String) {
+    init(latitude: String, longitude: String, moment: Date) {
         self.latitude = latitude
         self.longitude = longitude
+        self.moment = moment
     }
     
-    
+    let moment: Date
     let latitude: String
     let longitude: String
-    
 }
 
 class LocationDAO {
@@ -33,7 +33,7 @@ class LocationDAO {
     
     public func getLocations() -> [Location] {
         do {
-            guard let locationsFromUserDefaults: Data = UserDefaults.standard.object(forKey: "locations") as? Data else { return [] }
+            guard let locationsFromUserDefaults: Data = UserDefaults.standard.object(forKey: UserDefaultsFields.LocationFields.location) as? Data else { return [] }
             
             let locations = try JSONDecoder().decode([Location].self, from: locationsFromUserDefaults)
             return locations
